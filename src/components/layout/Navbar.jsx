@@ -33,47 +33,49 @@ const Navbar = () => {
   ];
   return (
     <div className="max-w-7xl m-auto">
-      <div className="flex items-center justify-between p-4">
+      <div className="flex items-center justify-between p-6">
         <div className="z-20">
-          <h1 className="font-medium text-gray-900 text-lg">RHS_Shop</h1>
+          <h1 className="font-medium text-gray-900 text-lg">SC_Shop</h1>
         </div>
+        {/* desktop */}
         <div className="hidden sm:flex items-center gap-8 flex-1 justify-center">
           {menus.map((item) => (
             <div key={item.id}>
               <a
                 href=""
-                className="text-gray-800 text-sm font-medium tracking-wide hover:text-blue-primary duration-300 ease-in-out transition-all"
+                className="text-gray-500 text-sm tracking-wide hover:text-gray-800 duration-300 ease-in-out transition-all"
               >
                 {item.name}
               </a>
             </div>
           ))}
         </div>
+
+        {/* mobile */}
         <div
-          className={`sm:hidden flex flex-col items-center justify-center fixed top-0  min-h-screen w-full bg-white z-10 gap-4 ${
-            openMenu ? "right-0" : "-right-full"
-          } transition-all duration-700 ease-in-out`}
+          className={`sm:hidden fixed top-0 w-full bg-white min-h-screen px-6 py-16 ${openMenu ? "right-0" : "-right-full"} duration-300 transition-all ease-in-out`}
         >
-          {menus.map((item) => (
-            <div key={item.id}>
-              <a
-                href=""
-                className="font-medium text-xl tracking-wide text-gray-800"
+          <div className="border-t py-4 border-gray-500 flex flex-col gap-1 w-full">
+            {menus.map((item) => (
+              <div
+                key={item.key}
+                className={`w-full p-2 rounded-xs text-gray-700 font-medium ${item.name === "Home" ? "bg-gray-100" : "bg-white "} hover:bg-cyan-600 hover:text-white transition-all duration-300 ease-in-out`}
               >
-                {item.name}
-              </a>
-            </div>
-          ))}
+                <a href="">{item.name}</a>
+              </div>
+            ))}
+          </div>
         </div>
+
         <div className="flex items-center gap-4">
-          <div className="cursor-pointer">
+          <div className="cursor-pointer bg-gray-100 w-8 h-8 rounded-full flex items-center justify-center">
             <FiSearch className="text-lg text-gray-700" />
           </div>
-          <div className="cursor-pointer">
+          <div className="cursor-pointer bg-gray-100 w-8 h-8 rounded-full flex items-center justify-center">
             <FiUser className="text-lg text-gray-700" />
           </div>
           <div
-            className="block sm:hidden cursor-pointer z-20"
+            className="sm:hidden cursor-pointer z-20 bg-gray-100 w-8 h-8 rounded-full flex items-center justify-center"
             onClick={() => setOpenMenu(!openMenu)}
           >
             {openMenu ? (
