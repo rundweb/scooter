@@ -1,8 +1,8 @@
 import React from "react";
-// icons
-import { GoArrowUpRight } from "react-icons/go";
+
 
 import product1 from '../../assets/images/sc (2).jpg'
+import Button from "../ui/Button";
 
 const Hero = () => {
   return (
@@ -18,10 +18,7 @@ const Hero = () => {
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est
               nobis consequatur modi adipisci pariatur quasi omnis. Autem dolore.
             </h2>
-            <div className="flex items-center">
-              <a href="" className="bg-gray-900 text-white text-sm py-3 px-6 rounded-full tracking-wide font-light">Browser All Products</a>
-              <a href="" className="bg-gray-900 text-white p-3 rounded-full text-xl"><GoArrowUpRight /></a>
-            </div>
+            <Button title="Browser All Products"/>
           </div>
           <div className="grid grid-cols-2 gap-5 sm:gap-10 bg-white rounded-2xl p-4">
             <div className="flex flex-col gap-10">
