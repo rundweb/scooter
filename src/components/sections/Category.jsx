@@ -26,14 +26,14 @@ const Category = () => {
             ducimus!
           </p>
         </div>
-        <div className="grid grid-cols-2 gap-4">
-          <div className="flex flex-col gap-6 bg-gray-100 p-8 rounded-4xl justify-between">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="flex flex-col gap-6 bg-gray-100 p-5 sm:p-8 rounded-2xl sm:rounded-4xl justify-between">
             <div>
               <img
                 src={imgCategory1}
                 alt="images-category-scooter"
                 title="images-category-scooter"
-                className="h-96 w-full rounded-2xl border border-gray-200"
+                className="h-full sm:h-96 w-full rounded-2xl border border-gray-200"
               />
             </div>
             <div className="flex flex-col gap-2.5">
@@ -48,7 +48,7 @@ const Category = () => {
             </div>
           </div>
           <div className="flex flex-col gap-4">
-            <div className="grid grid-cols-2 bg-gray-100 rounded-4xl p-5 justify-between gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 bg-gray-100 rounded-2xl sm:rounded-4xl p-5 justify-between gap-6">
               <div className="flex flex-col justify-end gap-2">
                 <h1 className="text-gray-800 text-xl tracking-wide">
                   Electrics
@@ -68,8 +68,8 @@ const Category = () => {
                 />
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="flex flex-col bg-gray-100 p-5 rounded-4xl gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="flex flex-col bg-gray-100 p-5 rounded-2xl sm:rounded-4xl gap-4">
                 <div>
                   <img
                     src={imgCategory4}
@@ -90,7 +90,7 @@ const Category = () => {
                   <div className="bg-white w-20 border border-gray-300 h-12 rounded-full flex items-center justify-center text-gray-900 text-2xl"><GoArrowUpRight/></div>
                 </div>
               </div>
-              <div className="flex flex-col bg-gray-100 p-5 rounded-4xl gap-4">
+              <div className="flex flex-col bg-gray-100 p-5 rounded-2xl sm:rounded-4xl gap-4">
                 <div>
                   <img
                     src={imgCategory2}
