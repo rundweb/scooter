@@ -102,7 +102,7 @@ const Category = () => {
                 <div className="flex items-center justify-between">
                   <div className="">
                     <h1 className="text-gray-800 text-xl tracking-wide">
-                      Scooters
+                      Mini Bike
                     </h1>
                     <p className="text-gray-500 text-xs tracking-wide mt-2">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.

@@ -58,7 +58,7 @@ const Navbar = () => {
           <div className="border-t py-4 border-gray-500 flex flex-col gap-1 w-full">
             {menus.map((item) => (
               <div
-                key={item.key}
+                key={item.id}
                 className={`w-full p-2 rounded-xs text-gray-700 font-medium ${item.name === "Home" ? "bg-gray-100" : "bg-white "} hover:bg-cyan-600 hover:text-white transition-all duration-300 ease-in-out`}
               >
                 <a href="">{item.name}</a>
