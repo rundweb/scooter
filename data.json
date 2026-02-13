@@ -1,0 +1,19 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Electric scooters are everywhere in cities across the United States.",
+      "images": "/scooter/images/sc1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Switching to an electric vehicle does not necessarily mean.",
+      "images": "/scooter/images/sc2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Vespa is widely known among the people. Kids will say “it's a Vespa!",
+      "images": "/scooter/images/sc3.jpg"
+    }
+  ]
+}
